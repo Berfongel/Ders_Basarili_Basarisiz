@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model DersBasariliBasarisiz
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <table>
+                <tr>
+                    <td style="color:darkblue;font-size:20px;"> Notunuzu Giriniz : </td>
+                    <td>@Html.EditorFor(not => not.Not)</td>
+                </tr>               
+                <tr>
+                    <td>@ViewBag.Message</td>
+                </tr>
+            </table>
+        }
+    </div>
+</body>
+</html>
